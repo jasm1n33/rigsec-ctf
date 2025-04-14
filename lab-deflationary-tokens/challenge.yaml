@@ -1,0 +1,19 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: lab13
+  annotations:
+    type: PWN
+    name: ETH Pwn
+    description: ""
+    author: ""
+    tags: "pwn"
+    flag: "rigsec{JA2AXFWH7hGFHLsqzui2}"
+
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    enabled: false

@@ -1,0 +1,19 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: lab-transitSwap
+  annotations:
+    type: PWN
+    name: ETH Pwn
+    description: ""
+    author: ""
+    tags: "pwn"
+    flag: "rigsec{TARb9uVCjfCLP6oRRVGe}"
+
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    enabled: false
