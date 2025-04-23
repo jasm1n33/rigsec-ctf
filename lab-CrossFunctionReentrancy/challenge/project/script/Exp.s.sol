@@ -17,7 +17,7 @@ contract Exp is CommonBase {
     function run() public {
         vm.startBroadcast(privKey);
         Solve solve = new Solve();
-        solve.solve(address(challenge));
+        solve.solve{value: 1 ether}(address(challenge));
         require(challenge.isSolved(), "!solved");
         vm.stopBroadcast();
     }
